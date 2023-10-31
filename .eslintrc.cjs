@@ -70,6 +70,7 @@ module.exports = {
 				map: [
 					['@', './src'],
 					['@components', './src/components'],
+					['@lib', './src/lib'],
 				],
 				extensions: ['.js', '.jsx', '.ts', '.tsx', '.json'],
 			},
