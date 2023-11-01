@@ -47,6 +47,16 @@ Likewise, for code formatting, you can execute:
 npm run format
 ```
 
+There are also commands available to automatically fix linting and formatting issues when possible:
+
+```
+npm run lint:fix
+```
+
+```
+npm run format:fix
+```
+
 If you are working with [Visual Studio Code](https://code.visualstudio.com/) please install the [ESLint Extension](https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint) and the [Prettier Extension](https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode).
 This extensions will read the configuration files for this tools and display warnings and errors in your code.
 To install both in one go search for "@recommended" in the Extensions search-box and install all the recommended ones under the `Workspace Recommendations` section. <br/>
