@@ -1,33 +1,23 @@
-import { useState } from 'react';
-import reactLogo from './assets/react.svg';
+/* Assets */
+import ITCrowdLogo from '@/assets/it-crowd.svg';
 
 import '@lib/styles/global.css';
 
 function App() {
-	const [count, setCount] = useState(0);
-
 	return (
 		<>
-			<div>
-				<a href="https://react.dev" rel="noreferrer" target="_blank">
-					<img alt="React logo" className="logo react" src={reactLogo} />
-				</a>
-			</div>
-			<h1>Vite + React</h1>
-			<div className="top-0 mx-4 p-1">
-				<button
-					type="button"
-					onClick={() => setCount((currentCount: number) => currentCount + 1)}
-				>
-					count is {count}
-				</button>
+			<header className="flex h-[50%] w-full flex-col items-center justify-center gap-10 bg-secondary ">
+				<img alt="IT Crowd Logo" height={74} src={ITCrowdLogo} width={360} />
+				<h1 className="text-2xl font-bold text-primary-300">
+					React + Vite + Tailwind Starter
+				</h1>
+			</header>
+			<main className="flex h-[50%] w-full flex-col items-center justify-center gap-10 bg-secondary text-slate-100">
 				<p>
-					Edit <code>src/App.tsx</code> and save to test HMR
+					Please checkout the <strong>README</strong> before starting.
 				</p>
-			</div>
-			<p className="read-the-docs">
-				Click on the Vite and React logos to learn more
-			</p>
+				<p>Happy coding! 🚀</p>
+			</main>
 		</>
 	);
 }
